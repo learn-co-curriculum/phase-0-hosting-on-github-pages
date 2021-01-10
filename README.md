@@ -347,6 +347,7 @@ git push
 
 Remember when you push changes to GitHub, they will take a few moments to appear
 in GitHub Pages.
+
 ## Conclusion
 
 As it turns out, the technology we were already using to store our code is also
@@ -367,7 +368,8 @@ Many websites are made up of two pieces, a frontend and a backend. The frontend
 is what the client experiences, what renders in the browser, while the backend
 handles data storage and other work we don't want to burden the frontend with.
 GitHub Pages will work well as a host for most frontends, even those using modern
-frameworks like React.
+frameworks like React. You'll soon see that frontends alone can actually be quite
+interesting and useful, even without a backend.
 
-For simpler websites - personal sites, projects, etc... - GitHub pages is a
+For simpler websites, though - personal sites, projects, etc... - GitHub pages is also a
 great, free option for publishing content online.
