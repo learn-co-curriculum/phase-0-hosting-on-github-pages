@@ -2,22 +2,29 @@
 
 ## Introduction
 
-In the earlier days of the internet, if you wanted to publish a custom website, your optons were limited, and the process was often complicated. Hosting a site required registering a domain, paying a hosting service, then going through a trial and erorr process of uploading your website's files to that service.
+In the earlier days of the internet, if you wanted to publish a custom website,
+your optons were limited, and the process was often complicated. Hosting a site
+required registering a domain, paying a hosting service, then going through a
+trial and erorr process of uploading your website's files to that service.
 
-Now, things are a bit different. Hosting services are still around and you can still register custom domains, but there are many ways to publish websites online now, including a few ways that are totally free for basic websites.
+Now, things are a bit different. Hosting services are still around and you can
+still register custom domains, but there are many ways to publish websites
+online now, including a few ways that are totally free for basic websites.
 
-In this lesson, we're going to walkthrough one free option for hosting HTML and JavaScript based websites. As it happens, we'll be using a service we're already familiar with - GitHub!
+In this lesson, we're going to walkthrough one free option for hosting HTML and
+JavaScript based websites. As it happens, we'll be using a service we're already
+familiar with &mdash; GitHub!
 
 ## Hosting on GitHub
 
-Any repository on GitHub can be published as a website - even if the repo
+Any repository on GitHub can be published as a website &mdash; even if the repo
 doesn't contain any HTML files. By default, GitHub will take a repository's
 `README.md` file and convert it to an HTML page. This lesson's repo, for
 instance, [is also published as a GitHub Page](https://learn-co-curriculum.github.io/hosting-on-github-pages/).
 
 In addition to this behavior, if we include an `index.html` in the repository
-beside the `README.md` file, GitHub will automatically display the HTML
-file instead! This is how we'll be publishing our site.
+beside the `README.md` file, GitHub will automatically display the HTML file
+instead! This is how we'll be publishing our site.
 
 To create and publish your own personal website, the overall process will be:
 
@@ -35,25 +42,28 @@ To create and publish your own personal website, the overall process will be:
 In the terminal, choose a good location to store your local repository and
 navigate to it.
 
-Next, choose a good name for your repo. Names are important. Once you've
-chosen, create a folder with `mkdir` then `cd` into it:
+Next, choose a good name for your repo. Names are important. Once you've chosen,
+create a folder with `mkdir` then `cd` into it:
 
 ```sh
 mkdir example-repository
 cd example-repository
 ```
 
-We'll come back to this folder in just a few moments. Next, we need to create
-a GitHub remote repository.
+We'll come back to this folder in just a few moments. Next, we need to create a
+GitHub remote repository.
+
 ## Creating a New GitHub Repository
 
 To create a new GitHub repository, go to
-(https://github.com/)[https://github.com/], click the **+** icon in the upper-right
-corner of the screen, and choose 'New repository' in the drop-down menu.
+(https://github.com/)[https://github.com/], click the **+** icon in the
+upper-right corner of the screen, and choose 'New repository' in the drop-down
+menu.
 
 ![new repo drop down](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-new-repository-drop-down.png)
 
-This will bring you to a page where you can set the new repository's name and other settings
+This will bring you to a page where you can set the new repository's name and
+other settings
 
 ![set new repo name](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-new-repository-name.png)
 
@@ -72,7 +82,9 @@ on the command line**.
 
 ![add remote repo](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-add-remote-repository.png)
 
-Notice that some of the commands in shown here have information unique to the repository and GitHub user. Your commands will differ slightly from the examples because of this.
+Notice that some of the commands in shown here have information unique to the
+repository and GitHub user. Your commands will differ slightly from the examples
+because of this.
 
 All the commands we need to get set up are provided here. You can choose to copy
 and these commands from GitHub one at a time or copy and paste them all at once.
@@ -107,8 +119,8 @@ touch index.html
 ```
 
 Open this file in your text editor so we can add some basic HTML content. In the
-file, we'll start with the minimum - a `DOCTYPE` tag indicating HTML and an
-`html` tag containing `head` and `body` tags:
+file, we'll start with the minimum &mdash; a `DOCTYPE` tag indicating HTML and
+an `html` tag containing `head` and `body` tags:
 
 ```html
 <!DOCTYPE html>
@@ -138,8 +150,9 @@ Finally, we'll add a bit of starter content in the `body`:
 </body>
 ```
 
-Including some example text to start is important - when we publish the site,
-we'll be looking for this message to confirm everything worked. The completed file should look like this:
+Including some example text to start is important &mdash; when we publish the
+site, we'll be looking for this message to confirm everything worked. The
+completed file should look like this:
 
 ```html
 <!DOCTYPE html>
@@ -153,8 +166,7 @@ we'll be looking for this message to confirm everything worked. The completed fi
 </html>
 ```
 
-Save the file. We now need to commit this file and push
-it to GitHub:
+Save the file. We now need to commit this file and push it to GitHub:
 
 ```sh
 git add index.html
@@ -174,7 +186,8 @@ Scroll through the settings until you find the **GitHub Pages** section:
 
 ![settings](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-settings.png)
 
-To enable GitHub Pages, first we need to set the **Source** to the default branch. Click the drop-down that says "None," then choose `main`.
+To enable GitHub Pages, first we need to set the **Source** to the default
+branch. Click the drop-down that says "None," then choose `main`.
 
 ![select branch](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-select-branch.png)
 
@@ -182,18 +195,23 @@ Once set, click **Save**:
 
 ![save button](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-save-button.png)
 
-The page will refresh. Along the top, a bannerr should appear that states the GitHub Page source was saved:
+The page will refresh. Along the top, a bannerr should appear that states the
+GitHub Page source was saved:
 
 ![source saved](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-source-saved.png)
 
-Scroll back to the **GitHub Page** settings. A new message
-will be present that includes a link to the newly published page
+Scroll back to the **GitHub Page** settings. A new message will be present that
+includes a link to the newly published page
 
 ![site is ready to be published](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-site-is-ready-to-be-published.png)
 
-Notice the URL isn't `github.com/<your-username>`, but instead, `<your-username>.github.io`.
+Notice the URL isn't `github.com/<your-username>`, but instead,
+`<your-username>.github.io`.
 
-Clicking on this link immediately may bring you to an error page. It can typically take up to ten minutes for the page to appear after being published, so wait a little bit and refresh. On refresh, you should see your HTML page rendered:
+Clicking on this link immediately may bring you to an error page. It can
+typically take up to ten minutes for the page to appear after being published,
+so wait a little bit and refresh. On refresh, you should see your HTML page
+rendered:
 
 ![site published on GitHub](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-published-site.png)
 
@@ -229,6 +247,7 @@ updating becomes:
 From here, you can choose to do whatever you like and customize your site as you
 please. However, we recommend adding and connecting two files now: a CSS file to
 style your HTML, and a JavaScript file to run code and manipulate the DOM.
+
 ### Add and Connect a CSS File
 
 In the terminal, create a CSS file alongside your `index.html` file
@@ -246,8 +265,8 @@ body {
 }
 ```
 
-Now, to connect this CSS file to our `index.html`, we need to modify the HTML `head`
-to include a `link` tag:
+Now, to connect this CSS file to our `index.html`, we need to modify the HTML
+`head` to include a `link` tag:
 
 ```html
 <head>
@@ -288,16 +307,15 @@ touch script.js
 Let's add some basic code so we can see something once we've connected the JS
 file to our HTML file.
 
-In `script.js`, let's create an `h2` element and add some text content to
-it:
+In `script.js`, let's create an `h2` element and add some text content to it:
 
 ```js
 let h2 = document.createElement('h2')
 h2.textContent = "This content added by JavaScript"
 ```
 
-Now, we'll include code to add this `h2` element to the `body` element in
-the DOM.
+Now, we'll include code to add this `h2` element to the `body` element in the
+DOM.
 
 ```js
 document.querySelector('body').appendChild(h2)
@@ -332,7 +350,8 @@ HTML will look like this:
 ```
 
 Open the file locally. In addition to "Hello World!" beng displayed, you should
-also see "This content added by JavaScript," confirming the code successfully ran.
+also see "This content added by JavaScript," confirming the code successfully
+ran.
 
 Go ahead and add other JavaScript if you'd like, then add, commit, and push the
 changes you've made. Since you've added a `script.js` file and modified the
@@ -351,8 +370,8 @@ in GitHub Pages.
 ## Conclusion
 
 As it turns out, the technology we were already using to store our code is also
-useful for publishing websites. If you have any existing repositories that include
-HTML, you can now quickly turn your work there into shareable websites.
+useful for publishing websites. If you have any existing repositories that
+include HTML, you can now quickly turn your work there into shareable websites.
 
 It makes sense if you consider GitHub is _already_ storing your code. The work
 required to display the contents of an HTML file in your browser versus _render_
@@ -367,9 +386,9 @@ that is acttually quite a lot, though.
 Many websites are made up of two pieces, a frontend and a backend. The frontend
 is what the client experiences, what renders in the browser, while the backend
 handles data storage and other work we don't want to burden the frontend with.
-GitHub Pages will work well as a host for most frontends, even those using modern
-frameworks like React. You'll soon see that frontends alone can actually be quite
-interesting and useful, even without a backend.
+GitHub Pages will work well as a host for most frontends, even those using
+modern frameworks like React. You'll soon see that frontends alone can actually
+be quite interesting and useful, even without a backend.
 
-For simpler websites, though - personal sites, projects, etc... - GitHub pages is also a
-great, free option for publishing content online.
+For simpler websites, though &mdash; personal sites, projects, etc... &mdash;
+GitHub pages is also a great, free option for publishing content online.
