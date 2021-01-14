@@ -3,7 +3,7 @@
 ## Introduction
 
 In the earlier days of the internet, if you wanted to publish a custom website,
-your optons were limited, and the process was often complicated. Hosting a site
+your options were limited, and the process was often complicated. Hosting a site
 required registering a domain, paying a hosting service, then going through a
 trial and erorr process of uploading your website's files to that service.
 
