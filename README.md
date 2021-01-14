@@ -5,7 +5,7 @@
 In the earlier days of the internet, if you wanted to publish a custom website,
 your options were limited, and the process was often complicated. Hosting a site
 required registering a domain, paying a hosting service, then going through a
-trial and erorr process of uploading your website's files to that service.
+trial and error process of uploading your website's files to that service.
 
 Now, things are a bit different. Hosting services are still around and you can
 still register custom domains, but there are many ways to publish websites
@@ -35,7 +35,7 @@ To create and publish your own personal website, the overall process will be:
 - Add, commit and push the new content to the remote
 - Enable GitHub Pages in the remote repository's settings
 - Check out the published site
-- Continue buildng out the HTML and add CSS and JavaScript files
+- Continue building out the HTML and add CSS and JavaScript files
 
 ## Creating a Local Repository Folder
 
@@ -220,7 +220,7 @@ Woo-hoo!
 
 ## Troubleshooting
 
-In the event that it isn't a woo-hoo for you, there are a few troublshooting
+In the event that it isn't a woo-hoo for you, here are a few troubleshooting
 options to try:
 
 - Double check the GitHub Page settings and make sure `main` is set as the
@@ -350,7 +350,7 @@ HTML will look like this:
 </html>
 ```
 
-Open the file locally. In addition to "Hello World!" beng displayed, you should
+Open the file locally. In addition to "Hello World!" being displayed, you should
 also see "This content added by JavaScript," confirming the code successfully
 ran.
 
