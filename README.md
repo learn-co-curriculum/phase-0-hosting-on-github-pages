@@ -11,7 +11,7 @@ Now, things are a bit different. Hosting services are still around and you can
 still register custom domains, but there are many ways to publish websites
 online now, including a few ways that are totally free for basic websites.
 
-In this lesson, we're going to walkthrough one free option for hosting HTML and
+In this lesson, we're going to walk through one free option for hosting HTML and
 JavaScript based websites. As it happens, we'll be using a service we're already
 familiar with &mdash; GitHub!
 
@@ -34,8 +34,8 @@ To create and publish your own personal website, the overall process will be:
 - Create an `index.html` file with some basic content
 - Add, commit and push the new content to the remote
 - Enable GitHub Pages in the remote repository's settings
-- Check out published site
-- Continue buildng out the HTML, add CSS and JavaScript files
+- Check out the published site
+- Continue buildng out the HTML and add CSS and JavaScript files
 
 ## Creating a Local Repository Folder
 
@@ -56,7 +56,7 @@ GitHub remote repository.
 ## Creating a New GitHub Repository
 
 To create a new GitHub repository, go to
-(https://github.com/)[https://github.com/], click the **+** icon in the
+[https://github.com/](https://github.com/), click the **+** icon in the
 upper-right corner of the screen, and choose 'New repository' in the drop-down
 menu.
 
@@ -68,7 +68,8 @@ other settings
 ![set new repo name](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-new-repository-name.png)
 
 Choose a good name. Names are important. Once the repository is given a name,
-we'll leave the other options unchecked and click "Create Repository" button.
+we'll leave the other options as they are and click the "Create Repository"
+button.
 
 ![create repo](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-create-repository.png)
 
@@ -82,13 +83,13 @@ on the command line**.
 
 ![add remote repo](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-add-remote-repository.png)
 
-Notice that some of the commands in shown here have information unique to the
+Notice that some of the commands shown here have information unique to the
 repository and GitHub user. Your commands will differ slightly from the examples
 because of this.
 
 All the commands we need to get set up are provided here. You can choose to copy
-and these commands from GitHub one at a time or copy and paste them all at once.
-We recommend you take a moment to review what each command does:
+and paste these commands from GitHub one at a time or copy and paste them all at
+once. We recommend you take a moment to review what each command does:
 
 1) `echo "# example-repository" >> README.md` creates a `README.md` file and
    adds some markdown.
@@ -195,13 +196,13 @@ Once set, click **Save**:
 
 ![save button](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-save-button.png)
 
-The page will refresh. Along the top, a bannerr should appear that states the
+The page will refresh. Along the top, a banner should appear that states the
 GitHub Page source was saved:
 
 ![source saved](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-source-saved.png)
 
 Scroll back to the **GitHub Page** settings. A new message will be present that
-includes a link to the newly published page
+includes a link to the newly published page:
 
 ![site is ready to be published](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-site-is-ready-to-be-published.png)
 
@@ -219,8 +220,8 @@ Woo-hoo!
 
 ## Troubleshooting
 
-In the event that it isn't a woo-hoo for you, there a few troublshooting options
-to try:
+In the event that it isn't a woo-hoo for you, there are a few troublshooting
+options to try:
 
 - Double check the GitHub Page settings and make sure `main` is set as the
   source
@@ -240,8 +241,8 @@ changes to the repository files and push them to your remote. The process for
 updating becomes:
 
 - Create or modify a file
-- Add, commit, and push it to you remote
-- Wait for a few minutes for GitHub to update your page
+- Add, commit, and push it to your remote
+- Wait a few minutes for GitHub to update your page
 - Visit your GitHub Page to see the newest changes
 
 From here, you can choose to do whatever you like and customize your site as you
@@ -310,15 +311,15 @@ file to our HTML file.
 In `script.js`, let's create an `h2` element and add some text content to it:
 
 ```js
-let h2 = document.createElement('h2')
-h2.textContent = "This content added by JavaScript"
+const h2 = document.createElement('h2');
+h2.textContent = "This content added by JavaScript";
 ```
 
 Now, we'll include code to add this `h2` element to the `body` element in the
 DOM.
 
 ```js
-document.querySelector('body').appendChild(h2)
+document.querySelector('body').appendChild(h2);
 ```
 
 Save this and switch over to `index.html`. To connect `script.js` to our HTML,
@@ -330,7 +331,7 @@ we add a `script` tag inside `body`.
 
 This tag includes a `src` attribute. Like `href` from the `link` tag, `src`
 specifies the location of the script we want to run. Since `script.js` is side
-by side to `index.html`, we just write the file name.
+by side with `index.html`, we just write the file name.
 
 After adding the `script` tag for JavaScript and the `link` tag for CSS, our
 HTML will look like this:
@@ -381,7 +382,7 @@ As you continue your programming journey, you'll eventually start building parts
 of websites that can't be published using GitHub. Sites that require a server to
 store data, for instance, can't be published on GitHub Pages. GitHub is just
 rendering files it already has; it won't do more work than that. It turns out,
-that is acttually quite a lot, though.
+that is actually quite a lot, though.
 
 Many websites are made up of two pieces, a frontend and a backend. The frontend
 is what the client experiences, what renders in the browser, while the backend
@@ -390,5 +391,5 @@ GitHub Pages will work well as a host for most frontends, even those using
 modern frameworks like React. You'll soon see that frontends alone can actually
 be quite interesting and useful, even without a backend.
 
-For simpler websites, though &mdash; personal sites, projects, etc... &mdash;
-GitHub pages is also a great, free option for publishing content online.
+For simpler websites &mdash; personal sites, projects, etc... &mdash; GitHub
+pages is a great, free option for publishing content online.
