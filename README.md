@@ -101,7 +101,7 @@ once. We recommend you take a moment to review what each command does:
    preserving the newly created `README.md` file in the history of the
    repository
 5) `git branch -M main` ensures the default repository branch is set to `main`
-6) `git remote add orgin git@github...` associates the remote GitHub repository
+6) `git remote add origin git@github...` associates the remote GitHub repository
    with the new local repository. This association is given the name `origin`.
 7) `git push -u origin main` pushes the commit we just created to the remote
    repository.
