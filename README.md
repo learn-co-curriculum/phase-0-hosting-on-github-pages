@@ -20,7 +20,7 @@ familiar with &mdash; GitHub!
 Any repository on GitHub can be published as a website &mdash; even if the repo
 doesn't contain any HTML files. By default, GitHub will take a repository's
 `README.md` file and convert it to an HTML page. This lesson's repo, for
-instance, [is also published as a GitHub Page](https://learn-co-curriculum.github.io/hosting-on-github-pages/).
+instance, [is also published as a GitHub Page](https://learn-co-curriculum.github.io/phase-0-hosting-on-github-pages/).
 
 In addition to this behavior, if we include an `index.html` in the repository
 beside the `README.md` file, GitHub will automatically display the HTML file
@@ -91,19 +91,19 @@ All the commands we need to get set up are provided here. You can choose to copy
 and paste these commands from GitHub one at a time or copy and paste them all at
 once. We recommend you take a moment to review what each command does:
 
-1) `echo "# example-repository" >> README.md` creates a `README.md` file and
+1. `echo "# example-repository" >> README.md` creates a `README.md` file and
    adds some markdown.
-2) `git init` initializes a local repository in the folder you're currently in
+2. `git init` initializes a local repository in the folder you're currently in
    on the command line
-3) `git add README.md` stages the newly created `README.md` file, getting it
+3. `git add README.md` stages the newly created `README.md` file, getting it
    ready to be committed
-4) `git commit -m "first commit"` creates the repository's first commit,
+4. `git commit -m "first commit"` creates the repository's first commit,
    preserving the newly created `README.md` file in the history of the
    repository
-5) `git branch -M main` ensures the default repository branch is set to `main`
-6) `git remote add origin git@github...` associates the remote GitHub repository
+5. `git branch -M main` ensures the default repository branch is set to `main`
+6. `git remote add origin git@github...` associates the remote GitHub repository
    with the new local repository. This association is given the name `origin`.
-7) `git push -u origin main` pushes the commit we just created to the remote
+7. `git push -u origin main` pushes the commit we just created to the remote
    repository.
 
 Once all commands are executed, refresh your GitHub repository and you should
@@ -126,12 +126,8 @@ an `html` tag containing `head` and `body` tags:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-  </head>
-  <body>
-    
-  </body>
+  <head> </head>
+  <body></body>
 </html>
 ```
 
@@ -271,13 +267,13 @@ Now, to connect this CSS file to our `index.html`, we need to modify the HTML
 
 ```html
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <title>My Website</title>
 </head>
 ```
 
 The `link` tag is used to connect files to the HTML page. Note the tag has two
-atttributes. The first is `rel`, which specifies how the connected file relates
+attributes. The first is `rel`, which specifies how the connected file relates
 to the HTML. In this case, we're indicating that we're relating a _stylesheet_.
 
 The second attribute is `href`, which specifies the location of the file we're
@@ -311,7 +307,7 @@ file to our HTML file.
 In `script.js`, let's create an `h2` element and add some text content to it:
 
 ```js
-const h2 = document.createElement('h2');
+const h2 = document.createElement("h2");
 h2.textContent = "This content added by JavaScript";
 ```
 
@@ -319,7 +315,7 @@ Now, we'll include code to add this `h2` element to the `body` element in the
 DOM.
 
 ```js
-document.querySelector('body').appendChild(h2);
+document.querySelector("body").appendChild(h2);
 ```
 
 Save this and switch over to `index.html`. To connect `script.js` to our HTML,
@@ -339,14 +335,14 @@ HTML will look like this:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
