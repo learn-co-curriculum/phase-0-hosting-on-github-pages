@@ -2,6 +2,7 @@
 
 ## Introduction
 
+
 In the earlier days of the internet, if you wanted to publish a custom website,
 your options were limited, and the process was often complicated. Hosting a site
 required registering a domain, paying a hosting service, then going through a
