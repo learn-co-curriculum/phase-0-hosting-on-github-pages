@@ -14,11 +14,11 @@ online now, including a few ways that are totally free for basic websites.
 
 In this lesson, we're going to walk through one free option for hosting HTML and
 JavaScript based websites. As it happens, we'll be using a service we're already
-familiar with &mdash; GitHub!
+familiar with — GitHub!
 
 ## Hosting on GitHub
 
-Any repository on GitHub can be published as a website &mdash; even if the repo
+Any repository on GitHub can be published as a website — even if the repo
 doesn't contain any HTML files. By default, GitHub will take a repository's
 `README.md` file and convert it to an HTML page. This lesson's repo, for
 instance, [is also published as a GitHub Page](https://learn-co-curriculum.github.io/phase-0-hosting-on-github-pages/).
@@ -121,7 +121,7 @@ touch index.html
 ```
 
 Open this file in your text editor so we can add some basic HTML content. In the
-file, we'll start with the minimum &mdash; a `DOCTYPE` tag indicating HTML and
+file, we'll start with the minimum — a `DOCTYPE` tag indicating HTML and
 an `html` tag containing `head` and `body` tags:
 
 ```html
@@ -148,7 +148,7 @@ Finally, we'll add a bit of starter content in the `body`:
 </body>
 ```
 
-Including some example text to start is important &mdash; when we publish the
+Including some example text to start is important — when we publish the
 site, we'll be looking for this message to confirm everything worked. The
 completed file should look like this:
 
@@ -388,5 +388,5 @@ GitHub Pages will work well as a host for most frontends, even those using
 modern frameworks like React. You'll soon see that frontends alone can actually
 be quite interesting and useful, even without a backend.
 
-For simpler websites &mdash; personal sites, projects, etc... &mdash; GitHub
+For simpler websites — personal sites, projects, etc... — GitHub
 pages is a great, free option for publishing content online.
