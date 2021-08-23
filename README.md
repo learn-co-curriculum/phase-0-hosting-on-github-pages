@@ -2,7 +2,6 @@
 
 ## Introduction
 
-
 In the earlier days of the internet, if you wanted to publish a custom website,
 your options were limited, and the process was often complicated. Hosting a site
 required registering a domain, paying a hosting service, then going through a
@@ -46,9 +45,9 @@ navigate to it.
 Next, choose a good name for your repo. Names are important. Once you've chosen,
 create a folder with `mkdir` then `cd` into it:
 
-```sh
-mkdir example-repository
-cd example-repository
+```console
+$ mkdir example-repository
+$ cd example-repository
 ```
 
 We'll come back to this folder in just a few moments. Next, we need to create a
@@ -116,8 +115,8 @@ website.
 
 In the terminal, create an `index.html` file:
 
-```sh
-touch index.html
+```console
+$ touch index.html
 ```
 
 Open this file in your text editor so we can add some basic HTML content. In the
@@ -166,10 +165,10 @@ completed file should look like this:
 
 Save the file. We now need to commit this file and push it to GitHub:
 
-```sh
-git add index.html
-git commit -m "create basic HTML file"
-git push
+```console
+$ git add index.html
+$ git commit -m "create basic HTML file"
+$ git push
 ```
 
 Time to head back to GitHub!
@@ -250,8 +249,8 @@ style your HTML, and a JavaScript file to run code and manipulate the DOM.
 
 In the terminal, create a CSS file alongside your `index.html` file
 
-```sh
-touch style.css
+```console
+$ touch style.css
 ```
 
 Before we connect this file to our HTML, let's add a basic style rule to the
@@ -287,19 +286,19 @@ Go ahead and add some better styling, then add, commit, and push the changes
 you've made. Remember, since you've added a `style.css` file and modified the
 `index.html` file, we'll need to add both files before committing:
 
-```sh
-git add style.css
-git add index.html
-git commit -m "add style.css, connect to index.html"
-git push
+```console
+$ git add style.css
+$ git add index.html
+$ git commit -m "add style.css, connect to index.html"
+$ git push
 ```
 
 ### Add and Connect a JavaScript File
 
 In the terminal, create a JS file alongside `index.html`.
 
-```sh
-touch script.js
+```console
+$ touch script.js
 ```
 
 Let's add some basic code so we can see something once we've connected the JS
@@ -355,11 +354,11 @@ Go ahead and add other JavaScript if you'd like, then add, commit, and push the
 changes you've made. Since you've added a `script.js` file and modified the
 `index.html` file, we'll need to add both files before committing:
 
-```sh
-git add script.js
-git add index.html
-git commit -m "add script.js, connect to index.html"
-git push
+```console
+$ git add script.js
+$ git add index.html
+$ git commit -m "add script.js, connect to index.html"
+$ git push
 ```
 
 Remember when you push changes to GitHub, they will take a few moments to appear
