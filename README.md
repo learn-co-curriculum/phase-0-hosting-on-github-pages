@@ -1,5 +1,10 @@
 # Hosting a Website on GitHub Pages
 
+## Learning Goals
+
+- Understand what it means to host a website
+- Use GitHub to host a website from a Git repository
+
 ## Introduction
 
 In the earlier days of the internet, if you wanted to publish a custom website,
