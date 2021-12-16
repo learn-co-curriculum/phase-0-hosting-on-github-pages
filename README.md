@@ -91,7 +91,7 @@ completed file should look like this:
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Website</title>
+    <title>My Personal Website</title>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -336,3 +336,7 @@ be quite interesting and useful, even without a backend.
 
 For simpler websites — personal sites, projects, etc... — GitHub
 pages is a great, free option for publishing content online.
+
+## Resources
+
+- [GitHub Pages](https://pages.github.com/)
