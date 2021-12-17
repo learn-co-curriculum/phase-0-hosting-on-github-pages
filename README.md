@@ -1,4 +1,4 @@
-# Hosting a Website on GitHub Pages
+# Prework Final Project Prep Part II: Hosting a Website on GitHub Pages
 
 ## Learning Goals
 
@@ -31,90 +31,21 @@ In addition to this behavior, if we include an `index.html` in the repository
 beside the `README.md` file, GitHub will automatically display the HTML file
 instead! This is how we'll be publishing our site.
 
-To create and publish your own personal website, the overall process will be:
+The full process for creating and publishing your own personal website is shown
+below. Note that we've already completed the first three steps:
 
-- Create a local repository folder
-- Create a remote GitHub repository
-- Add the new remote to the local repository
+- Create a local repository folder ✔
+- Create a remote GitHub repository ✔
+- Add the new remote to the local repository ✔
 - Create an `index.html` file with some basic content
 - Add, commit and push the new content to the remote
 - Enable GitHub Pages in the remote repository's settings
 - Check out the published site
 - Continue building out the HTML and add CSS and JavaScript files
 
-## Creating a Local Repository Folder
-
-In the terminal, choose a good location to store your local repository and
-navigate to it.
-
-Next, choose a good name for your repo. Names are important. Once you've chosen,
-create a folder with `mkdir` then `cd` into it:
-
-```console
-$ mkdir example-repository
-$ cd example-repository
-```
-
-We'll come back to this folder in just a few moments. Next, we need to create a
-GitHub remote repository.
-
-## Creating a New GitHub Repository
-
-To create a new GitHub repository, go to
-[https://github.com/](https://github.com/), click the **+** icon in the
-upper-right corner of the screen, and choose 'New repository' in the drop-down
-menu.
-
-![new repo drop down](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-new-repository-drop-down.png)
-
-This will bring you to a page where you can set the new repository's name and
-other settings
-
-![set new repo name](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-new-repository-name.png)
-
-Choose a good name. Names are important. Once the repository is given a name,
-we'll leave the other options as they are and click the "Create Repository"
-button.
-
-![create repo](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-create-repository.png)
-
-An empty repository will be created.
-
-## Add The New Remote To Your Local Repository
-
-Because it has no content, you'll be presented with a set of different options
-for getting things started. This time, we'll choose to **create a new repository
-on the command line**.
-
-![add remote repo](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-add-remote-repository.png)
-
-Notice that some of the commands shown here have information unique to the
-repository and GitHub user. Your commands will differ slightly from the examples
-because of this.
-
-All the commands we need to get set up are provided here. You can choose to copy
-and paste these commands from GitHub one at a time or copy and paste them all at
-once. We recommend you take a moment to review what each command does:
-
-1. `echo "# example-repository" >> README.md` creates a `README.md` file and
-   adds some markdown.
-2. `git init` initializes a local repository in the folder you're currently in
-   on the command line
-3. `git add README.md` stages the newly created `README.md` file, getting it
-   ready to be committed
-4. `git commit -m "first commit"` creates the repository's first commit,
-   preserving the newly created `README.md` file in the history of the
-   repository
-5. `git branch -M main` ensures the default repository branch is set to `main`
-6. `git remote add origin git@github...` associates the remote GitHub repository
-   with the new local repository. This association is given the name `origin`.
-7. `git push -u origin main` pushes the commit we just created to the remote
-   repository.
-
-Once all commands are executed, refresh your GitHub repository and you should
-see that the `README.md` file now appears on GitHub. With a repository set up,
-the next step is to create a basic HTML file to serve as the start of our
-website.
+By the time you've finished this lesson, you'll be at that last step; from
+there, you can focus on building the content, styling and behavior you'd like
+your site to have.
 
 ## Build an HTML file
 
@@ -124,23 +55,23 @@ In the terminal, create an `index.html` file:
 $ touch index.html
 ```
 
-Open this file in your text editor so we can add some basic HTML content. In the
-file, we'll start with the minimum — a `DOCTYPE` tag indicating HTML and
-an `html` tag containing `head` and `body` tags:
+Open this file in VS Code so we can add some basic HTML content. In the file,
+we'll start with the minimum — a `DOCTYPE` tag indicating HTML and an `html` tag
+containing `head` and `body` tags:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head></head>
   <body></body>
 </html>
 ```
 
-Let's give this HTML a `title` tag and place it inside `head`:
+Next, let's give this HTML a `title` tag and place it inside `head`:
 
 ```html
 <head>
-  <title>My Website</title>
+  <title>My Personal Website</title>
 </head>
 ```
 
@@ -160,7 +91,7 @@ completed file should look like this:
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Website</title>
+    <title>My Personal Website</title>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -176,46 +107,49 @@ $ git commit -m "create basic HTML file"
 $ git push
 ```
 
-Time to head back to GitHub!
+**Check your work**: Head back to your project's GitHub page and refresh the
+page. You should see the html file with the content we created alongside the
+README.md file we created earlier.
 
 ## Publish HTML as a GitHub Page
 
 In your GitHub repository, click the **Settings** tab:
 
-![settings tab](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-settings-tab.png)
+![settings tab](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/github-pages-settings-tab.png)
 
-Scroll through the settings until you find the **GitHub Pages** section:
+In the list on the left, near the bottom, click the **Pages** tab. This will
+display the following:
 
-![settings](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-settings.png)
+![settings](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/github-pages-settings.png)
 
 To enable GitHub Pages, first we need to set the **Source** to the default
-branch. Click the drop-down that says "None," then choose `main`.
+branch. Click the drop-down that says "None" and choose `main`, then click
+**Save**.
 
-![select branch](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-select-branch.png)
-
-Once set, click **Save**:
-
-![save button](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-save-button.png)
+![select branch](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/github-pages-select-branch.png)
 
 The page will refresh. Along the top, a banner should appear that states the
 GitHub Page source was saved:
 
-![source saved](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-source-saved.png)
+![source saved](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/github-pages-source-saved.png)
 
-Scroll back to the **GitHub Page** settings. A new message will be present that
-includes a link to the newly published page:
+There will also be a message that says your site is ready to be published and a
+link to the page:
 
-![site is ready to be published](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-site-is-ready-to-be-published.png)
+![site is ready to be published](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/site-is-ready-to-be-published.png)
 
 Notice the URL isn't `github.com/<your-username>`, but instead,
 `<your-username>.github.io`.
 
-Clicking on this link immediately may bring you to an error page. It can
-typically take up to ten minutes for the page to appear after being published,
-so wait a little bit and refresh. On refresh, you should see your HTML page
-rendered:
+Clicking on this link immediately may bring you to an error page. It can take up
+to ten minutes for the page to be published, so wait a little bit and refresh.
+You can also refresh the GitHub Pages Settings page; the message should update
+to "Your site is published..." once it is ready.
 
-![site published on GitHub](https://curriculum-content.s3.amazonaws.com/github-pages-lesson/github-pages-published-site.png)
+**Check your work**: Once the page has been published, you should see your HTML
+page rendered:
+
+![site published on GitHub](https://curriculum-content.s3.amazonaws.com/phase-0/hosting-on-github/site-published-on-github.png)
 
 Woo-hoo!
 
@@ -225,9 +159,9 @@ In the event that it isn't a woo-hoo for you, here are a few troubleshooting
 options to try:
 
 - Double check the GitHub Page settings and make sure `main` is set as the
-  source
+  source.
 - If settings are correct, review the `index.html` file to make sure there are
-  no typos or syntax errors
+  no typos or syntax errors.
 - Create a new repository again, but hold off on creating an HTML file. Instead,
   only create a `README.md` file with some example text and use GitHub Pages to
   publish the repo. Once the Readme file is displaying as a GitHub Page, start
@@ -235,11 +169,10 @@ options to try:
 
 ## Continuing To Build
 
-With an `index.html` file created, it is possible to add additional files to the
-site to incorporate CSS and JavaScript. One of the great things about GitHub
-Pages is that your published website will automatically update as you make
-changes to the repository files and push them to your remote. The process for
-updating becomes:
+With an `index.html` file created, we can now add additional files to the site
+to incorporate CSS and JavaScript. One of the great things about GitHub Pages is
+that your published website will automatically update as you make changes to the
+repository files and push them to your remote. The process for updating becomes:
 
 - Create or modify a file
 - Add, commit, and push it to your remote
@@ -297,6 +230,11 @@ $ git add index.html
 $ git commit -m "add style.css, connect to index.html"
 $ git push
 ```
+
+Or you can add both files in a single command: `git add .`.
+
+**Check your work**: Wait a few minutes for your page to be updated, then visit
+the GitHub page to verify that the new styles are showing up.
 
 ### Add and Connect a JavaScript File
 
@@ -369,11 +307,15 @@ $ git push
 Remember when you push changes to GitHub, they will take a few moments to appear
 in GitHub Pages.
 
+**Check your work**: Once the page has updated, you should see your styling and
+content, including the `h2` element we added using JavaScript.
+
 ## Conclusion
 
 As it turns out, the technology we were already using to store our code is also
 useful for publishing websites. If you have any existing repositories that
-include HTML, you can now quickly turn your work there into shareable websites.
+include HTML — or even if they don't! — you can now quickly turn your work there
+into shareable websites.
 
 It makes sense if you consider GitHub is _already_ storing your code. The work
 required to display the contents of an HTML file in your browser versus _render_
@@ -383,7 +325,7 @@ As you continue your programming journey, you'll eventually start building parts
 of websites that can't be published using GitHub. Sites that require a server to
 store data, for instance, can't be published on GitHub Pages. GitHub is just
 rendering files it already has; it won't do more work than that. It turns out,
-that is actually quite a lot, though.
+though, that is actually quite a lot.
 
 Many websites are made up of two pieces, a frontend and a backend. The frontend
 is what the client experiences, what renders in the browser, while the backend
@@ -394,3 +336,7 @@ be quite interesting and useful, even without a backend.
 
 For simpler websites — personal sites, projects, etc... — GitHub
 pages is a great, free option for publishing content online.
+
+## Resources
+
+- [GitHub Pages](https://pages.github.com/)
