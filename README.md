@@ -206,7 +206,7 @@ Now, to connect this CSS file to our `index.html`, we need to modify the HTML
 ```html
 <head>
   <link rel="stylesheet" href="style.css" />
-  <title>My Website</title>
+  <title>My Personal Website</title>
 </head>
 ```
 
@@ -280,7 +280,7 @@ HTML will look like this:
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>My Website</title>
+    <title>My Personal Website</title>
   </head>
   <body>
     <h1>Hello World!</h1>
