@@ -1,4 +1,4 @@
-# Prework Final Project Prep Part II: Hosting a Website on GitHub Pages
+# Software Engineering Prep Final Project Setup Part II: Hosting a Website on GitHub Pages
 
 ## Learning Goals
 
