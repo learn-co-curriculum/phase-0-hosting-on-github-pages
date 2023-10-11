@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- Understand what it means to host a website
+- Identify what it means to host a website
 - Use GitHub to host a website from a Git repository
 
 ## Introduction
@@ -18,7 +18,7 @@ online now, including a few ways that are totally free for basic websites.
 
 In this lesson, we're going to walk through one free option for hosting HTML and
 JavaScript based websites. As it happens, we'll be using a service we're already
-familiar with — GitHub!
+familiar with: GitHub!
 
 ## Hosting on GitHub
 
@@ -327,12 +327,12 @@ store data, for instance, can't be published on GitHub Pages. GitHub is just
 rendering files it already has; it won't do more work than that. It turns out,
 though, that is actually quite a lot.
 
-Many websites are made up of two pieces, a frontend and a backend. The frontend
-is what the client experiences, what renders in the browser, while the backend
-handles data storage and other work we don't want to burden the frontend with.
-GitHub Pages will work well as a host for most frontends, even those using
-modern frameworks like React. You'll soon see that frontends alone can actually
-be quite interesting and useful, even without a backend.
+Many websites are made up of two pieces, a front end and a back end. The front end
+is what the client experiences, what renders in the browser, while the back end
+handles data storage and other work we don't want to burden the front end with.
+GitHub Pages will work well as a host for most front ends, even those using
+modern frameworks like React. You'll soon see that front ends alone can actually
+be quite interesting and useful, even without a back end.
 
 For simpler websites — personal sites, projects, etc... — GitHub
 pages is a great, free option for publishing content online.
